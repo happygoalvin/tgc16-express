@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and found</title>
+</head>
+<body>
+    <form method="POST">
+    <div>
+        <label>Name of item</label>
+        <input type="text" name="item"/>
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email"/>
+    </div>
+    <div>
+        <label>Where did you lose it?</label>
+        <input type="radio" value="taxi" name="location" id="taxi">
+        <label for="taxi">taxi</label>
+        <input type="radio" value="bus" name="location" id="bus">
+        <label for="bus">bus</label>
+        <input type="radio" value="MRT" name="location" id="mrt">
+        <label for="mrt">MRT</label>
+    </div>
+    <div>
+        <label>How does it look? (Select at least 1 option and no more than 3)</label>
+        <input type="checkbox" value="bulky" name="properties" id="bulky">
+        <label for="bulky">bulky</label>
+        <input type="checkbox" value="expensive" name="properties" id="expensive">
+        <label for="expensive">expensive</label>
+        <input type="checkbox" value="colorful" name="properties" id="colorful">
+        <label for="colorful">colorful</label>
+        <input type="checkbox" value="branded" name="properties" id="branded">
+        <label for="branded">branded</label>
+        <input type="checkbox" value="small" name="properties" id="small">
+        <label for="small">small</label>
+        <input type="checkbox" value="plain" name="properties" id="plain">
+        <label for="plain">plain</label>
+    </div>
+
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
