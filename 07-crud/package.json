@@ -1,0 +1,25 @@
+{
+  "name": "tgc16-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happygoalvin/tgc16-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happygoalvin/tgc16-express/issues"
+  },
+  "homepage": "https://github.com/happygoalvin/tgc16-express#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "wax-on": "^1.2.2"
+  }
+}

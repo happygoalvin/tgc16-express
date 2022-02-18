@@ -1,0 +1,25 @@
+{{#extends 'base'}}
+
+{{#block 'title'}}
+Sightings
+{{/block}}
+
+{{#block 'content'}}
+<table class="table">
+    <thead> <!-- table headers -->
+        <tr> <!-- table row -->
+            <th>ID</th> <!-- table header -->
+            <th>Description</th>
+            <th>Food</th>
+        </tr>
+    </thead>
+    {{#each sightings}}
+      <tr>
+          <td>ID</td>
+          <td>For Description</td>
+          <td>For Food</td>
+      </tr>
+</table>
+{{/block}}
+
+{{/extends}}
