@@ -55,7 +55,7 @@ app.post("/sightings/create", async function(req,res){
     // axios.post send a POST request to the endpoint
     // first arg: endpoint URL
     // second arg: the body (or the data to send)
-    await axios.post( BASE_API_URL + "/sighting", payload);
+    await axios.post( BASE_API_URL + '/sighting', payload);
 
     res.redirect('/'); // send a response back to the client
                        // and tell it to automatically go to / route

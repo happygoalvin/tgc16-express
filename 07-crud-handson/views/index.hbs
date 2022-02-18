@@ -1,0 +1,35 @@
+{{#extends 'base'}}
+
+{{#block 'title'}}
+Movies
+{{/block}}
+
+{{#block 'content'}}
+<a class="btn btn-primary btn-sm my-3" href="/movies/create">Add movies</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Movie Title</th>
+            <th>Movie Plot</th>
+            <th></th>
+        </tr>
+    </thead>
+    {{#each movies}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.plot}}</td>
+        <td>
+            <a href="/movies/{{this.id}}/update" class="btn btn-primary btn-sm">Edit</a>
+        </td>
+        <td>
+            <a href="/movies/{{this.id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+
+</table>
+{{/block}}
+
+{{/extends}}
