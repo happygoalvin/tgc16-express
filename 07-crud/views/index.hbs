@@ -1,24 +1,35 @@
-{{#extends 'base'}}
+{{#extends "base"}}
 
-{{#block 'title'}}
+{{#block "title"}}
 Sightings
 {{/block}}
 
-{{#block 'content'}}
+{{#block "content"}}
+<a class="btn btn-primary btn-sm my-3" href="/sightings/create">Add Sighting</a>
 <table class="table">
     <thead> <!-- table headers -->
         <tr> <!-- table row -->
             <th>ID</th> <!-- table header -->
             <th>Description</th>
             <th>Food</th>
+            <th></th>
         </tr>
     </thead>
     {{#each sightings}}
-      <tr>
-          <td>ID</td>
-          <td>For Description</td>
-          <td>For Food</td>
-      </tr>
+        <tr>
+            <td>{{this._id}}</td> <!-- table column -->
+            <td>{{this.description}}</td>
+            <td>{{this.food}}</td>
+            <td>
+                <a href="/sightings/{{this._id}}/update" class="btn btn-primary btn-sm">Edit</a>
+            </td>
+            <td>
+                <a href="/sightings/{{this._id}}/update" class="btn btn-primary btn-sm">Edit</a>
+                <a href="/sightings/{{this._id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    {{/each}}
+
 </table>
 {{/block}}
 

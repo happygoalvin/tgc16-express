@@ -1,0 +1,37 @@
+{{#extends 'base'}}
+
+{{#block "title"}}Update Sighting{{/block}}
+
+{{#block "content"}}
+<form method="POST">
+    <div>
+        <label>Description:</label>
+        <input type="text" 
+               class="form-control" 
+               name="description"
+               value="{{sighting.description}}"
+        />
+    </div>
+    <div>
+        <label>Food</label>
+        <input type="text" class="form-control" 
+               placeholder="Seperate a food with a comma"
+               name="food"
+               value="{{sighting.food}}"
+        />
+    </div>
+    <div>
+        <label>Date/Time</label>
+        <input type="datetime-local" 
+               class="form-control"
+               name="datetime"
+               value="{{sighting.datetime}}"
+        />
+    </div>
+    <input type="submit" 
+           class="btn btn-primary mt-3"
+           value="Update"/>
+</form>
+{{/block}}
+
+{{/extends}}
